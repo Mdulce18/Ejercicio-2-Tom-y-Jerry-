@@ -1,8 +1,17 @@
 package Paquete1;
 
-public class Jerry {
+public class Raton {
     private double peso;
     private double velocidad;
+    private double posicion;
+
+    public double getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(double posicion) {
+        this.posicion = posicion;
+    }
 
     public void setPeso(double peso) {
         this.peso = peso;

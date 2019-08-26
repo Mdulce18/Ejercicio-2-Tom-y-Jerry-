@@ -3,8 +3,8 @@ package Paquete1;
 import junit.framework.TestCase;
 
 public class TomTest extends TestCase {
-    Tom tom1 = new Tom();
-    Jerry jerry1 = new Jerry();
+    Gato tom1 = new Gato();
+    Raton jerry1 = new Raton();
 
     public void setUp() {
     tom1.setEnergia(20);
@@ -15,6 +15,12 @@ public class TomTest extends TestCase {
 
     public void testAtraparAJerry(){
         assertTrue(tom1.puedeAtraparJerry(jerry1));
+    }
+
+    public void testAtraparAJerry2(){ //Falla ya que tom no tiene energia suficiente para atraparta a jerry
+        tom1.setEnergia(10);//asi que le pongo false
+        tom1.setVelocidad();
+        assertFalse(tom1.puedeAtraparJerry(jerry1));
     }
 
 
