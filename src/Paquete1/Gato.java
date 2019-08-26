@@ -36,6 +36,6 @@ public class Gato {
     public void  correrJerry (Raton jerry){ //El consumo de energía es 0.5 *  su velocidad * distancia entre ambos.
         // Además su posición actual pasa a ser igual a la del ratón.
         this.energia= getEnergia()- (0.5*getVelocidad()*Math.abs(jerry.getPosicion()- getPosicion()));//si esto lo pongo en otro metodo mejor
-        this.posicion=jerry.getPosicion();//se denomina abstraccion auxiliar
+        this.posicion=jerry.getPosicion();//se denomina abstraccion auxiliar - BUENA PRACTICA
     }
 }
