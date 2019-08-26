@@ -4,10 +4,6 @@ public class Jerry {
     private double peso;
     private double velocidad;
 
-    public Jerry (double peso){
-        this.peso = peso;
-    }
-
     public void setPeso(double peso) {
         this.peso = peso;
     }
