@@ -30,10 +30,11 @@ public class Gato {
     }
 
     public boolean puedeAtraparJerry(Raton jerry) { //Se le pasa un objeto jerry sobre el cual va a comparara valores
-        return velocidad > jerry.getVelocidad();//es true si
+        return this.velocidad > jerry.getVelocidad();//es true si
     }
 
-    public void  correrJerry (Raton jerry){
+    public void  correrJerry (Raton jerry){ //El consumo de energía es 0.5 *  su velocidad * distancia entre ambos.
+        // Además su posición actual pasa a ser igual a la del ratón.
         this.energia= getEnergia()- (0.5*getVelocidad()*(jerry.getPosicion()- getPosicion()));
         this.posicion=jerry.getPosicion();
     }
